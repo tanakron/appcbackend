@@ -1,0 +1,1851 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Reactor - Bootstrap Admin Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <!-- build:css({.tmp,app}) styles/app.min.css -->
+  <link rel="stylesheet" href="styles/webfont.css">
+  <link rel="stylesheet" href="styles/climacons-font.css">
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles/font-awesome.css">
+  <link rel="stylesheet" href="styles/card.css">
+  <link rel="stylesheet" href="styles/sli.css">
+  <link rel="stylesheet" href="styles/animate.css">
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="styles/app.skins.css">
+  <!-- endbuild -->
+</head>
+
+<body class="page-loading">
+  <!-- page loading spinner -->
+  <div class="pageload">
+    <div class="pageload-inner">
+      <div class="sk-rotating-plane"></div>
+    </div>
+  </div>
+  <!-- /page loading spinner -->
+  <div class="app layout-fixed-header">
+    <!-- sidebar panel -->
+    <div class="sidebar-panel offscreen-left">
+      <div class="brand">
+        <!-- toggle small sidebar menu -->
+        <a href="javascript:;" class="toggle-apps hidden-xs" data-toggle="quick-launch">
+          <i class="icon-grid"></i>
+        </a>
+        <!-- /toggle small sidebar menu -->
+        <!-- toggle offscreen menu -->
+        <div class="toggle-offscreen">
+          <a href="javascript:;" class="visible-xs hamburger-icon" data-toggle="offscreen" data-move="ltr">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <!-- /toggle offscreen menu -->
+        <!-- logo -->
+        <a class="brand-logo">
+          <span>Reactor</span>
+        </a>
+        <a href="#" class="small-menu-visible brand-logo">R</a>
+        <!-- /logo -->
+      </div>
+      <ul class="quick-launch-apps hide">
+        <li>
+          <a href="apps-gallery.html">
+            <span class="app-icon bg-danger text-white">
+            G
+            </span>
+            <span class="app-title">Gallery</span>
+          </a>
+        </li>
+        <li>
+          <a href="apps-messages.html">
+            <span class="app-icon bg-success text-white">
+            M
+            </span>
+            <span class="app-title">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="apps-social.html">
+            <span class="app-icon bg-primary text-white">
+            S
+            </span>
+            <span class="app-title">Social</span>
+          </a>
+        </li>
+        <li>
+          <a href="apps-travel.html">
+            <span class="app-icon bg-info text-white">
+            T
+            </span>
+            <span class="app-title">Travel</span>
+          </a>
+        </li>
+      </ul>
+      <!-- main navigation -->
+      <nav role="navigation">
+        <ul class="nav">
+          <!-- dashboard -->
+          <li>
+            <a href="index.html">
+              <i class="icon-compass"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <!-- /dashboard -->
+          <!-- customizer -->
+          <li>
+            <a href="http://customizer.nyasha.me/#reactor" target="_blank">
+              <i class="icon-equalizer"></i>
+              <span>Customize</span>
+            </a>
+          </li>
+          <!-- /customizer -->
+          <!-- cards -->
+          <li>
+            <a href="javascript:;">
+              <span class="badge pull-right">4</span>
+              <i class="icon-drop"></i>
+              <span>Cards</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="cards-basic.html">
+                  <span>Basic</span>
+                </a>
+              </li>
+              <li>
+                <a href="cards-portlets.html">
+                  <span>Portlets</span>
+                </a>
+              </li>
+              <li>
+                <a href="cards-draggable.html">
+                  <span>Draggable</span>
+                </a>
+              </li>
+              <li>
+                <a href="cards-widgets.html">
+                  <span>Widgets</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- /cards -->
+          <!-- apps -->
+          <li>
+            <a href="javascript:;">
+              <i class="icon-cursor"></i>
+              <span>Apps</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="apps-calendar.html">
+                  <span>Calendar</span>
+                </a>
+              </li>
+              <li>
+                <a href="apps-gallery.html">
+                  <span>Gallery</span>
+                </a>
+              </li>
+              <li>
+                <a href="apps-messages.html">
+                  <span>Messages</span>
+                </a>
+              </li>
+              <li>
+                <a href="apps-social.html">
+                  <span>Social</span>
+                </a>
+              </li>
+              <li>
+                <a href="apps-projects.html">
+                  <span>Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="apps-contacts.html">
+                  <span>Contacts</span>
+                </a>
+              </li>
+              <li>
+                <a href="apps-travel.html">
+                  <span>Travel</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- /apps -->
+          <!-- commerce -->
+          <li>
+            <a href="javascript:;">
+              <i class="icon-bag"></i>
+              <span>Commerce</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="commerce-products.html">
+                  <span>Products</span>
+                </a>
+              </li>
+              <li>
+                <a href="commerce-cart.html">
+                  <span>Cart</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- /commerce -->
+          <!-- ui -->
+          <li class="open">
+            <a href="javascript:;">
+              <i class="icon-book-open"></i>
+              <span>Elements</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="ui-buttons.html">
+                  <span>Buttons</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-social-buttons.html">
+                  <span>Social buttons</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-general.html">
+                  <span>General</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-tabs.html">
+                  <span>Tabs</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-progressbars.html">
+                  <span>Progress bars</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-pagination.html">
+                  <span>Pagination</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-sliders.html">
+                  <span>Sliders</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-notifications.html">
+                  <span>Notifications</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-spinners.html">
+                  <span>Spinners</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-colors.html">
+                  <span>Colors</span>
+                </a>
+              </li>
+              <li>
+                <a href="ui-alerts.html">
+                  <span>Alerts</span>
+                </a>
+              </li>
+              <li class="open">
+                <a href="javascript:;">
+                  <i class="toggle-accordion"></i>
+                  <span>Icons</span>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="ui-icons-sli.html">
+                      <span>SLI</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui-icons-fontawesome.html">
+                      <span>Fontawesome</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui-icons-climacons.html">
+                      <span>Climacons</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- /ui -->
+          <!-- forms -->
+          <li>
+            <a href="javascript:;">
+              <i class="icon-loop"></i>
+              <span>Forms</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="forms-basic.html">
+                  <span>Basic</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-custom.html">
+                  <span>Custom</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-plugins.html">
+                  <span>Plugins</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-wizard.html">
+                  <span>Wizard</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-editors.html">
+                  <span>Editors</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-validation.html">
+                  <span>Validation</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-masks.html">
+                  <span>Masks</span>
+                </a>
+              </li>
+              <li>
+                <a href="forms-upload.html">
+                  <span>Upload</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- /forms -->
+          <!-- tables -->
+          <li>
+            <a href="javascript:;">
+              <i class="icon-share-alt"></i>
+              <span>Tables</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="tables-basic.html">
+                  <span>Basic</span>
+                </a>
+              </li>
+              <li>
+                <a href="tables-responsive.html">
+                  <span>Responsive</span>
+                </a>
+              </li>
+              <li>
+                <a href="tables-datatables.html">
+                  <span>Datatables</span>
+                </a>
+              </li>
+              <li>
+                <a href="tables-editable.html">
+                  <span>Editable</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- /tables -->
+          <!-- charts -->
+          <li>
+            <a href="javascript:;">
+              <i class="icon-pie-chart"></i>
+              <span>Charts</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="charts-flot.html">
+                  <span>Flot</span>
+                </a>
+              </li>
+              <li>
+                <a href="charts-easypie.html">
+                  <span>Easypie</span>
+                </a>
+              </li>
+              <li>
+                <a href="charts-chartjs.html">
+                  <span>Chartjs</span>
+                </a>
+              </li>
+              <li>
+                <a href="charts-rickshaw.html">
+                  <span>Rickshaw</span>
+                </a>
+              </li>
+              <li>
+                <a href="charts-nvd3.html">
+                  <span>nvd3</span>
+                </a>
+              </li>
+              <li>
+                <a href="charts-c3js.html">
+                  <span>C3js</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- /charts -->
+          <!-- maps -->
+          <li>
+            <a href="javascript:;">
+              <i class="icon-pointer"></i>
+              <span>Maps</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="maps-google.html">
+                  <span>Google</span>
+                </a>
+              </li>
+              <li>
+                <a href="maps-vector.html">
+                  <span>Vector</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- /maps -->
+          <!-- extras -->
+          <li>
+            <a href="javascript:;">
+              <i class="icon-tag"></i>
+              <span>Extras</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="extras-invoice.html">
+                  <span>Invoice</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-timeline.html">
+                  <span>Timeline</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-timeline-stacked.html">
+                  <span>Stacked timeline</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-post.html">
+                  <span>Post</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-sortable.html">
+                  <span>Sortable</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-nestable.html">
+                  <span>Nestable</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-signin.html">
+                  <span>Signin</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-signin2.html">
+                  <span>Signin v2</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-signup.html">
+                  <span>Signup</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-signup2.html">
+                  <span>Signup v2</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-forgot.html">
+                  <span>Forgot</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-lockscreen.html">
+                  <span>Lockscreen</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-404.html">
+                  <span>404 page</span>
+                </a>
+              </li>
+              <li>
+                <a href="extras-500.html">
+                  <span>500 page</span>
+                </a>
+              </li>
+              <li>
+                <a href="blank.html">
+                  <span>Starter</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- /extras -->
+          <!-- menu levels -->
+          <li>
+            <a href="javascript:;">
+              <i class="icon-frame"></i>
+              <span>Menu Level</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:;">
+                  <i class="toggle-accordion"></i>
+                  <span>Level</span>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="javascript:;">
+                      <i class="toggle-accordion"></i>
+                      <span>Level</span>
+                    </a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="javascript:;">
+                          <span>Level</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span>Level</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <span>Level</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <span>Level</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- menu levels -->
+          <!-- documentation -->
+          <li>
+            <a href="http://reactor.nyasha.me/documentation" target="_blank">
+              <i class="icon-layers"></i>
+              <span>Documentation</span>
+            </a>
+          </li>
+          <!-- /documentation -->
+          <!-- static -->
+          <li>
+            <a href="http://reactor.nyasha.me/angular" target="_blank">
+              <i class="icon-control-play"></i>
+              <span>Angular version</span>
+            </a>
+          </li>
+          <!-- /static -->
+        </ul>
+      </nav>
+      <!-- /main navigation -->
+    </div>
+    <!-- /sidebar panel -->
+    <!-- content panel -->
+    <div class="main-panel">
+      <!-- top header -->
+      <div class="header navbar">
+        <div class="brand visible-xs">
+          <!-- toggle offscreen menu -->
+          <div class="toggle-offscreen">
+            <a href="javascript:;" class="hamburger-icon visible-xs" data-toggle="offscreen" data-move="ltr">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- /toggle offscreen menu -->
+          <!-- logo -->
+          <a class="brand-logo">
+            <span>REACTOR</span>
+          </a>
+          <!-- /logo -->
+        </div>
+        <ul class="nav navbar-nav hidden-xs">
+          <li>
+            <a href="javascript:;" class="small-sidebar-toggle ripple" data-toggle="layout-small-menu">
+              <i class="icon-toggle-sidebar"></i>
+            </a>
+          </li>
+          <li class="searchbox">
+            <a href="javascript:;" data-toggle="search">
+              <i class="search-close-icon icon-close hide"></i>
+              <i class="search-open-icon icon-magnifier"></i>
+            </a>
+          </li>
+          <li class="navbar-form search-form hide">
+            <input type="search" class="form-control search-input" placeholder="Start typing...">
+            <div class="search-predict hide">
+              <a href="#">Searching for 'purple rain'</a>
+              <div class="heading">
+                <span class="title">People</span>
+              </div>
+              <ul class="predictive-list">
+                <li>
+                  <a class="avatar" href="#">
+                    <img src="images/face1.jpg" class="img-circle" alt="">
+                    <span>Tammy Carpenter</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="avatar" href="#">
+                    <img src="images/face2.jpg" class="img-circle" alt="">
+                    <span>Catherine Moreno</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="avatar" href="#">
+                    <img src="images/face3.jpg" class="img-circle" alt="">
+                    <span>Diana Robertson</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="avatar" href="#">
+                    <img src="images/face4.jpg" class="img-circle" alt="">
+                    <span>Emma Sullivan</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="heading">
+                <span class="title">Page posts</span>
+              </div>
+              <ul class="predictive-list">
+                <li>
+                  <a class="avatar" href="#">
+                    <img src="images/unsplash/img2.jpeg" class="img-rounded" alt="">
+                    <span>The latest news for cloud-based developers </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="avatar" href="#">
+                    <img src="images/unsplash/img2.jpeg" class="img-rounded" alt="">
+                    <span>Trending Goods of the Week</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right hidden-xs">
+          <li>
+            <a href="javascript:;" class="ripple" data-toggle="dropdown">
+              <span>EN</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="javascript:;">English</a>
+              </li>
+              <li>
+                <a href="javascript:;">Russian</a>
+              </li>
+              <li>
+                <a href="javascript:;">French</a>
+              </li>
+              <li>
+                <a href="javascript:;">Spanish</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;" class="ripple" data-toggle="dropdown">
+              <i class="icon-bell"></i>
+            </a>
+            <ul class="dropdown-menu notifications">
+              <li class="notifications-header">
+                <p class="text-muted small">You have 3 new messages</p>
+              </li>
+              <li>
+                <ul class="notifications-list">
+                  <li>
+                    <a href="javascript:;">
+                      <div class="notification-icon">
+                        <div class="circle-icon bg-success text-white">
+                          <i class="icon-bulb"></i>
+                        </div>
+                      </div>
+                      <span class="notification-message"><b>Sean</b> launched a new application</span>
+                      <span class="time">2s</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <div class="notification-icon">
+                        <div class="circle-icon bg-danger text-white">
+                          <i class="icon-cursor"></i>
+                        </div>
+                      </div>
+                      <span class="notification-message"><b>Removed calendar</b> from app list</span>
+                      <span class="time">4h</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <div class="notification-icon">
+                        <div class="circle-icon bg-primary text-white">
+                          <i class="icon-basket"></i>
+                        </div>
+                      </div>
+                      <span class="notification-message"><b>Denise</b> bought <b>Urban Admin Kit</b></span>
+                      <span class="time">2d</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <div class="notification-icon">
+                        <div class="circle-icon bg-info text-white">
+                          <i class="icon-bubble"></i>
+                        </div>
+                      </div>
+                      <span class="notification-message"><b>Vincent commented</b> on an item</span>
+                      <span class="time">2s</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <span class="notification-icon">
+                      <img src="images/face3.jpg" class="avatar img-circle" alt="">
+                      </span>
+                      <span class="notification-message"><b>Jack Hunt</b> has <b>joined</b> mailing list</span>
+                      <span class="time">9d</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;" class="ripple" data-toggle="dropdown">
+              <img src="images/avatar.jpg" class="header-avatar img-circle" alt="user" title="user">
+              <span>Sean Carpenter</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="javascript:;">Settings</a>
+              </li>
+              <li>
+                <a href="javascript:;">Upgrade</a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <span class="label bg-danger pull-right">34</span>
+                  <span>Notifications</span>
+                </a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="javascript:;">Help</a>
+              </li>
+              <li>
+                <a href="extras-signin.html">Logout</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;" class="ripple" data-toggle="layout-chat-open">
+              <i class="icon-user"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /top header -->
+      <!-- main area -->
+      <div class="main-content">
+        <div class="page-title">
+          <div class="title">SLI</div>
+          <div class="sub-title">Custom webfont</div>
+        </div>
+        <div class="feather-list mb25">
+          <div class="row">
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-user"></i> &nbsp;icon-user
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-user-female"></i> &nbsp;icon-user-female
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-users"></i> &nbsp;icon-users
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-user-follow"></i> &nbsp;icon-user-follow
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-user-following"></i> &nbsp;icon-user-following
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-user-unfollow"></i> &nbsp;icon-user-unfollow
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-trophy"></i> &nbsp;icon-trophy
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-speedometer"></i> &nbsp;icon-speedometer
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-social-youtube"></i> &nbsp;icon-social-youtube
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-social-twitter"></i> &nbsp;icon-social-twitter
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-social-tumblr"></i> &nbsp;icon-social-tumblr
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-social-facebook"></i> &nbsp;icon-social-facebook
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-social-dropbox"></i> &nbsp;icon-social-dropbox
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-social-dribbble"></i> &nbsp;icon-social-dribbble
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-shield"></i> &nbsp;icon-shield
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-screen-tablet"></i> &nbsp;icon-screen-tablet
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-screen-smartphone"></i> &nbsp;icon-screen-smartphone
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-screen-desktop"></i> &nbsp;icon-screen-desktop
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-plane"></i> &nbsp;icon-plane
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-notebook"></i> &nbsp;icon-notebook
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-moustache"></i> &nbsp;icon-moustache
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-mouse"></i> &nbsp;icon-mouse
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-magnet"></i> &nbsp;icon-magnet
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-magic-wand"></i> &nbsp;icon-magic-wand
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-hourglass"></i> &nbsp;icon-hourglass
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-graduation"></i> &nbsp;icon-graduation
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-ghost"></i> &nbsp;icon-ghost
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-game-controller"></i> &nbsp;icon-game-controller
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-fire"></i> &nbsp;icon-fire
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-eyeglasses"></i> &nbsp;icon-eyeglasses
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-envelope-open"></i> &nbsp;icon-envelope-open
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-envelope-letter"></i> &nbsp;icon-envelope-letter
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-energy"></i> &nbsp;icon-energy
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-emoticon-smile"></i> &nbsp;icon-emoticon-smile
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-disc"></i> &nbsp;icon-disc
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-cursor-move"></i> &nbsp;icon-cursor-move
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-crop"></i> &nbsp;icon-crop
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-credit-card"></i> &nbsp;icon-credit-card
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-chemistry"></i> &nbsp;icon-chemistry
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-bell"></i> &nbsp;icon-bell
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-badge"></i> &nbsp;icon-badge
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-anchor"></i> &nbsp;icon-anchor
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-action-redo"></i> &nbsp;icon-action-redo
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-action-undo"></i> &nbsp;icon-action-undo
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-bag"></i> &nbsp;icon-bag
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-basket"></i> &nbsp;icon-basket
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-basket-loaded"></i> &nbsp;icon-basket-loaded
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-book-open"></i> &nbsp;icon-book-open
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-briefcase"></i> &nbsp;icon-briefcase
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-bubbles"></i> &nbsp;icon-bubbles
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-calculator"></i> &nbsp;icon-calculator
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-call-end"></i> &nbsp;icon-call-end
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-call-in"></i> &nbsp;icon-call-in
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-call-out"></i> &nbsp;icon-call-out
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-compass"></i> &nbsp;icon-compass
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-cup"></i> &nbsp;icon-cup
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-diamond"></i> &nbsp;icon-diamond
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-direction"></i> &nbsp;icon-direction
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-directions"></i> &nbsp;icon-directions
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-docs"></i> &nbsp;icon-docs
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-drawer"></i> &nbsp;icon-drawer
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-drop"></i> &nbsp;icon-drop
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-earphones"></i> &nbsp;icon-earphones
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-earphones-alt"></i> &nbsp;icon-earphones-alt
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-feed"></i> &nbsp;icon-feed
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-film"></i> &nbsp;icon-film
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-folder-alt"></i> &nbsp;icon-folder-alt
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-frame"></i> &nbsp;icon-frame
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-globe"></i> &nbsp;icon-globe
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-globe-alt"></i> &nbsp;icon-globe-alt
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-handbag"></i> &nbsp;icon-handbag
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-layers"></i> &nbsp;icon-layers
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-map"></i> &nbsp;icon-map
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-picture"></i> &nbsp;icon-picture
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-pin"></i> &nbsp;icon-pin
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-playlist"></i> &nbsp;icon-playlist
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-present"></i> &nbsp;icon-present
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-printer"></i> &nbsp;icon-printer
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-puzzle"></i> &nbsp;icon-puzzle
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-speech"></i> &nbsp;icon-speech
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-vector"></i> &nbsp;icon-vector
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-wallet"></i> &nbsp;icon-wallet
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-arrow-down"></i> &nbsp;icon-arrow-down
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-arrow-left"></i> &nbsp;icon-arrow-left
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-arrow-right"></i> &nbsp;icon-arrow-right
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-arrow-up"></i> &nbsp;icon-arrow-up
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-bar-chart"></i> &nbsp;icon-bar-chart
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-bulb"></i> &nbsp;icon-bulb
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-calendar"></i> &nbsp;icon-calendar
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-control-end"></i> &nbsp;icon-control-end
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-control-forward"></i> &nbsp;icon-control-forward
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-control-pause"></i> &nbsp;icon-control-pause
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-control-play"></i> &nbsp;icon-control-play
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-control-rewind"></i> &nbsp;icon-control-rewind
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-control-start"></i> &nbsp;icon-control-start
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-cursor"></i> &nbsp;icon-cursor
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-dislike"></i> &nbsp;icon-dislike
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-equalizer"></i> &nbsp;icon-equalizer
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-graph"></i> &nbsp;icon-graph
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-grid"></i> &nbsp;icon-grid
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-home"></i> &nbsp;icon-home
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-like"></i> &nbsp;icon-like
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-list"></i> &nbsp;icon-list
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-login"></i> &nbsp;icon-login
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-logout"></i> &nbsp;icon-logout
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-loop"></i> &nbsp;icon-loop
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-microphone"></i> &nbsp;icon-microphone
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-music-tone"></i> &nbsp;icon-music-tone
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-music-tone-alt"></i> &nbsp;icon-music-tone-alt
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-note"></i> &nbsp;icon-note
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-pencil"></i> &nbsp;icon-pencil
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-pie-chart"></i> &nbsp;icon-pie-chart
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-question"></i> &nbsp;icon-question
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-rocket"></i> &nbsp;icon-rocket
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-share"></i> &nbsp;icon-share
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-share-alt"></i> &nbsp;icon-share-alt
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-shuffle"></i> &nbsp;icon-shuffle
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-size-actual"></i> &nbsp;icon-size-actual
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-size-fullscreen"></i> &nbsp;icon-size-fullscreen
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-support"></i> &nbsp;icon-support
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-tag"></i> &nbsp;icon-tag
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-trash"></i> &nbsp;icon-trash
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-umbrella"></i> &nbsp;icon-umbrella
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-wrench"></i> &nbsp;icon-wrench
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-ban"></i> &nbsp;icon-ban
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-bubble"></i> &nbsp;icon-bubble
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-camcorder"></i> &nbsp;icon-camcorder
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-camera"></i> &nbsp;icon-camera
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-check"></i> &nbsp;icon-check
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-clock"></i> &nbsp;icon-clock
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-close"></i> &nbsp;icon-close
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-cloud-download"></i> &nbsp;icon-cloud-download
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-cloud-upload"></i> &nbsp;icon-cloud-upload
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-doc"></i> &nbsp;icon-doc
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-envelope"></i> &nbsp;icon-envelope
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-eye"></i> &nbsp;icon-eye
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-flag"></i> &nbsp;icon-flag
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-folder"></i> &nbsp;icon-folder
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-heart"></i> &nbsp;icon-heart
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-info"></i> &nbsp;icon-info
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-key"></i> &nbsp;icon-key
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-link"></i> &nbsp;icon-link
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-lock"></i> &nbsp;icon-lock
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-lock-open"></i> &nbsp;icon-lock-open
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-magnifier"></i> &nbsp;icon-magnifier
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-magnifier-add"></i> &nbsp;icon-magnifier-add
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-magnifier-remove"></i> &nbsp;icon-magnifier-remove
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-paper-clip"></i> &nbsp;icon-paper-clip
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-paper-plane"></i> &nbsp;icon-paper-plane
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-plus"></i> &nbsp;icon-plus
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-pointer"></i> &nbsp;icon-pointer
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-power"></i> &nbsp;icon-power
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-refresh"></i> &nbsp;icon-refresh
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-reload"></i> &nbsp;icon-reload
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-settings"></i> &nbsp;icon-settings
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-star"></i> &nbsp;icon-star
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-symbol-female"></i> &nbsp;icon-symbol-female
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-symbol-male"></i> &nbsp;icon-symbol-male
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-target"></i> &nbsp;icon-target
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-volume-1"></i> &nbsp;icon-volume-1
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-volume-2"></i> &nbsp;icon-volume-2
+              </a>
+            </div>
+            <div class="fa-hover col-md-3 col-sm-4">
+              <a href="javascript:;">
+                <i class="icon-volume-off"></i> &nbsp;icon-volume-off
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /main area -->
+    </div>
+    <!-- /content panel -->
+    <!-- bottom footer -->
+    <footer class="content-footer">
+      <nav class="footer-right">
+        <ul class="nav">
+          <li>
+            <a href="javascript:;">Feedback</a>
+          </li>
+          <li>
+            <a href="javascript:;" class="scroll-up">
+              <i class="fa fa-angle-up"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer-left hidden-xs">
+        <ul class="nav">
+          <li>
+            <a href="javascript:;"><span>About</span> Reactor</a>
+          </li>
+          <li>
+            <a href="javascript:;">Privacy</a>
+          </li>
+          <li>
+            <a href="javascript:;">Terms</a>
+          </li>
+          <li>
+            <a href="javascript:;">Help</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- /bottom footer -->
+    <!-- chat -->
+    <div class="chat-panel">
+      <div class="chat-inner">
+        <div class="chat-users">
+          <div class="chat-group mb0">
+            <div class="chat-group-header h4">
+              Chat
+            </div>
+          </div>
+          <div class="chat-group">
+            <div class="chat-group-header">
+              Favourites
+            </div>
+            <a href="javascript:;">
+              <span class="status-online"></span>
+              <span>Catherine Moreno</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-online"></span>
+              <span>Denise Peterson</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-away"></span>
+              <span>Charles Wilson</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-away"></span>
+              <span>Melissa Welch</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-no-disturb"></span>
+              <span>Vincent Peterson</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Pamela Wood</span>
+            </a>
+          </div>
+          <div class="chat-group">
+            <div class="chat-group-header">
+              Online Friends
+            </div>
+            <a href="javascript:;">
+              <span class="status-online"></span>
+              <span>Tammy Carpenter</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-away"></span>
+              <span>Emma Sullivan</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-no-disturb"></span>
+              <span>Andrea Brewer</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-online"></span>
+              <span>Sean Carpenter</span>
+            </a>
+          </div>
+          <div class="chat-group">
+            <div class="chat-group-header">
+              Offline
+            </div>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Denise Peterson</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Jose Rivera</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Diana Robertson</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>William Fields</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Emily Stanley</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Jack Hunt</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Sharon Rice</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Mary Holland</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Diane Hughes</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Steven Smith</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Emily Henderson</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Wayne Kelly</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Jane Garcia</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Jose Jimenez</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Rachel Burton</span>
+            </a>
+            <a href="javascript:;">
+              <span class="status-offline"></span>
+              <span>Samantha Ruiz</span>
+            </a>
+          </div>
+        </div>
+        <div class="chat-conversation">
+          <div class="chat-header">
+            <a class="chat-back" href="javascript:;">
+              <i class="icon-arrow-left"></i>
+            </a>
+            <div class="chat-header-title">
+              Charles Wilson
+            </div>
+          </div>
+          <div class="chat-conversation-content">
+            <p class="text-center text-muted small text-uppercase bold pb15">
+              Yesterday
+            </p>
+            <div class="chat-conversation-user them">
+              <div class="chat-conversation-message">
+                <p>Hey.</p>
+              </div>
+            </div>
+            <div class="chat-conversation-user them">
+              <div class="chat-conversation-message">
+                <p>How are the wife and kids, Taylor?</p>
+              </div>
+            </div>
+            <div class="chat-conversation-user me">
+              <div class="chat-conversation-message">
+                <p>Pretty good, Samuel.</p>
+              </div>
+            </div>
+            <p class="text-center text-muted small text-uppercase bold pb15">
+              Today
+            </p>
+            <div class="chat-conversation-user them">
+              <div class="chat-conversation-message">
+                <p>Curabitur blandit tempus porttitor.</p>
+              </div>
+            </div>
+            <div class="chat-conversation-user me">
+              <div class="chat-conversation-message">
+                <p>Goodnight!</p>
+              </div>
+            </div>
+            <div class="chat-conversation-user them">
+              <div class="chat-conversation-message">
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat-conversation-footer">
+            <button class="chat-input-tool">
+              <i class="fa fa-camera"></i>
+            </button>
+            <div class="chat-input" contenteditable=""></div>
+            <button class="chat-send">
+              <i class="fa fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /chat -->
+  </div>
+  <!-- build:js({.tmp,app}) scripts/app.min.js -->
+  <script src="scripts/helpers/modernizr.js"></script>
+  <script src="vendor/jquery/dist/jquery.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="vendor/fastclick/lib/fastclick.js"></script>
+  <script src="vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+  <script src="scripts/helpers/smartresize.js"></script>
+  <script src="scripts/constants.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
