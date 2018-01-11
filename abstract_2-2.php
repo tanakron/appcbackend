@@ -7,19 +7,19 @@ include 'header.php';
      
 
         <div class="card-block">
-           <button type="button" class="btn btn-success">Excel</button>
+        
             <table class="table table-bordered  m-b-0">
            
               <thead>
                 <tr>
 				
-                 <th>ID</th>
-                  <th>Firstname</th>
-                    <th>Familyname</th>
-                    <th>Country</th>
-                    <th>Email</th>
-                 <th>abstracttitle</th>
-             <th>file</th>
+                 <th>ID ABSTRACT</th>
+                  <th>EMAIL ABSTRACT</th>
+                    <th>ID CUSTOMER</th>
+                    <th>NAME</th>
+                    <th>Email CUSTOMER</th>
+                 
+            
                 </tr>
                 </thead>
               <?PHP
@@ -51,7 +51,9 @@ if($dbcon)
 
                                           
 
-                                            $sql = " SELECT * FROM abstract";
+                                            $sql = " SELECT abstract.id, abstract.email,  costomer_eng.custID ,costomer_eng.first_name_eg,costomer_eng.email
+FROM abstract
+JOIN costomer_eng ON abstract.custID = costomer_eng.custID";
                                             $qry = mysqli_query($con,$sql);
 
                                                 //$no = 1;
@@ -62,23 +64,20 @@ if($dbcon)
                                                     
                                <tbody >
 
-                                         <td><?php echo $f['custID']; ?> </td>    
-                           <td><?php echo $f['frmcontact_firstname']; ?></td>
-                           <td><?php echo $f['frmcontact_familyname']; ?>"</td>
-                           <td><?php echo $f['country']; ?></td>
+                                         <td><?php echo $f['id']; ?> </td>    
+                           <td><?php echo $f['email']; ?></td>
+                           <td><?php echo $f['custID']; ?></td>
+                           <td><?php echo $f['first_name_eg']; ?></td>
                       <td><?php echo $f['email']; ?></td>
-                       <td><?php echo $f['abstracttitle']; ?></td>
-                        <td><?php echo '<a href="../appc_2018@/uplond/' . $f["image"] . '">' . $f["image"] . '</a>'; ?></td>
-                         <td>
-                      
+                      <td>
 <div class="dropdown">
 <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">VIEW
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">ลบ
     <span class="caret"></span></button>
     <ul class="dropdown-menu">
-      <li><a href="#">PDF</a></li>
-      <li><a href="#">ดูข้อมูล</a></li>
-  <li><a href="#">ลบ</a></li>
+      <li><a href="#">ลบ</a></li>
+
+  
     </ul>
   </div>
 </div>
@@ -98,7 +97,7 @@ if($dbcon)
                                            
                                             ?> 
             </table>
-            <center><a href="index.php" class="btn btn-Primary btn-lg mr5">BACK</a></center>
+            <center><a href="index.php" class="btn btn-Primary btn-lg mr5">ฺBACK</a></center>
 </div>
  <body>
       <!-- /main area -->

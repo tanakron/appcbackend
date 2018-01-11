@@ -18,7 +18,7 @@ include 'header.php';
                     <th>Familyname</th>
                     <th>Country</th>
                     <th>Email</th>
-                 <th>abstracttitle</th>
+                 
              <th>file</th>
                 </tr>
                 </thead>
@@ -51,7 +51,7 @@ if($dbcon)
 
                                           
 
-                                            $sql = " SELECT * FROM abstract";
+                                            $sql = " SELECT * FROM costomer_re_eng_success";
                                             $qry = mysqli_query($con,$sql);
 
                                                 //$no = 1;
@@ -62,23 +62,20 @@ if($dbcon)
                                                     
                                <tbody >
 
-                                         <td><?php echo $f['custID']; ?> </td>    
-                           <td><?php echo $f['frmcontact_firstname']; ?></td>
-                           <td><?php echo $f['frmcontact_familyname']; ?>"</td>
+                                         <td><?php echo $f['ID']; ?> </td>    
+                           <td><?php echo $f['first_name_eg']; ?></td>
+                           <td><?php echo $f['last_name_eg']; ?>"</td>
                            <td><?php echo $f['country']; ?></td>
                       <td><?php echo $f['email']; ?></td>
-                       <td><?php echo $f['abstracttitle']; ?></td>
-                        <td><?php echo '<a href="../appc_2018@/uplond/' . $f["image"] . '">' . $f["image"] . '</a>'; ?></td>
-                         <td>
-                      
+                      <td>
 <div class="dropdown">
 <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">VIEW
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Download
     <span class="caret"></span></button>
     <ul class="dropdown-menu">
       <li><a href="#">PDF</a></li>
-      <li><a href="#">ดูข้อมูล</a></li>
-  <li><a href="#">ลบ</a></li>
+      <li><a href="#">View</a></li>
+  
     </ul>
   </div>
 </div>
@@ -98,7 +95,7 @@ if($dbcon)
                                            
                                             ?> 
             </table>
-            <center><a href="index.php" class="btn btn-Primary btn-lg mr5">BACK</a></center>
+            <center><a href="index.php" class="btn btn-Primary btn-lg mr5">ฺBACK</a></center>
 </div>
  <body>
       <!-- /main area -->

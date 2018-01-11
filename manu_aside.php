@@ -13,7 +13,7 @@
          
           <!-- forms -->
           <li>
-            <a href="javascript:;">
+            <a href="register.php">
               <i class="icon-loop"></i>
               <span>REGISTER</span>
             </a>
